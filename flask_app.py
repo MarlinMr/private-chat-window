@@ -73,7 +73,7 @@ def index():
 @app.route('/generate', methods=['POST'])
 def generate():
     user_prompt = request.form['user_prompt']
-    prompt = f"What I would like to say is the following: {user_prompt} "
+    prompt = f"{user_prompt}"
 
     async def get_result():
         response_text = ""
